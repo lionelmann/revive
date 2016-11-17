@@ -1,78 +1,127 @@
 <?php get_header(); ?>
 
-  <div class="container">
-    <div class="section">
 
-      <!--   Icon Section   -->
-      <div class="row">
+<div id="Container" class="mixitup">
+
+    <div class="mix web">
+        <div class="card">
+            <div class="card-image">
+                <a href="#"><img class="responsive-img" src="<?php echo get_template_directory_uri();?>/dist/images/building1.jpg"></a>
+                <span class="card-title">Base Building Structural Engineer</span>
+            </div>
+            <div class="card-content">
+                <p>We represent the owner’s interest for a renovation, addition or new build.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mix web">
+        <div class="card">
+            <div class="card-image">
+                <a href="#"><img class="responsive-img" src="<?php echo get_template_directory_uri();?>/dist/images/building4.jpg"></a>
+                <span class="card-title">Structural Assessments</span>
+            </div>
+            <div class="card-content">
+                <p>Similar to Home Inspections, we will visit your building to and complete a visual review.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mix web">
+        <div class="card">
+            <div class="card-image">
+                <a href="#"><img class="responsive-img" src="<?php echo get_template_directory_uri();?>/dist/images/building3.jpg"></a>
+                <span class="card-title">Shop Drawing Engineering</span>
+            </div>
+            <div class="card-content">
+                <p>Review and sealing of drawings to sub-trade suppliers.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mix web">
+        <div class="card">
+            <div class="card-image">
+                <a href="#"><img class="responsive-img" src="<?php echo get_template_directory_uri();?>/dist/images/building3.jpg"></a>
+                <span class="card-title">Residential Homes</span>
+            </div>
+            <div class="card-content">
+                <p>Review and design modern and conventional family homes and cottages.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mix web">
+        <div class="card">
+            <div class="card-image">
+                <a href="#"><img class="responsive-img" src="<?php echo get_template_directory_uri();?>/dist/images/building3.jpg"></a>
+                <span class="card-title">Heritage Buildings</span>
+            </div>
+            <div class="card-content">
+                <p>Support for Heritage Architects and Specialty Contractors in reviving Heritage Buildings.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mix web">
+        <div class="card">
+            <div class="card-image">
+                <a href="#"><img class="responsive-img" src="<?php echo get_template_directory_uri();?>/dist/images/building3.jpg"></a>
+                <span class="card-title">Light Commercial Buildings</span>
+            </div>
+            <div class="card-content">
+                <p>We love those old mixed material, merchant or warehouse buildings.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+
+<div class="row">
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Lorem ipsum dolor</h5>
-
-            <p class="light">Mauris mollis, dui ac feugiat posuere, est turpis aliquet erat, vitae blandit justo ligula sit amet arcu.</p>
+          <div class="card">
+            <div class="card-image">
+              <img src="<?php echo get_template_directory_uri();?>/dist/images/building1.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            
           </div>
         </div>
-
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">Lorem ipsum dolor</h5>
-
-            <p class="light">Mauris mollis, dui ac feugiat posuere, est turpis aliquet erat, vitae blandit justo ligula sit amet arcu.</p>
+          <div class="card">
+            <div class="card-image">
+              <img src="<?php echo get_template_directory_uri();?>/dist/images/building2.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            
           </div>
         </div>
-
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Lorem ipsum dolor</h5>
-
-            <p class="light">Mauris mollis, dui ac feugiat posuere, est turpis aliquet erat, vitae blandit justo ligula sit amet arcu.</p>
+          <div class="card">
+            <div class="card-image">
+              <img src="<?php echo get_template_directory_uri();?>/dist/images/building3.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            
           </div>
         </div>
       </div>
+-->
 
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="<?php echo get_template_directory_uri();?>/dist/images/background2.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="<?php echo get_template_directory_uri();?>/dist/images/background3.jpg" alt="Unsplashed background img 3"></div>
-  </div>
+  
 
     
 <?php get_footer(); ?>
