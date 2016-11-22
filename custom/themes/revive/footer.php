@@ -22,7 +22,18 @@
 jQuery(document).ready(function($){
       $('.parallax').parallax();
     });
+
 </script>
+
+<!-- Main library -->
+<script src="<?php echo get_template_directory_uri();?>/src/js/animation/three.min.js"></script>
+
+<!-- Helpers -->
+<script src="<?php echo get_template_directory_uri();?>/src/js/animation/projector.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/src/js/animation/canvas-renderer.js"></script>
+
+<!-- Visualitzation adjustments -->
+<script src="<?php echo get_template_directory_uri();?>/src/js/animation/3d-lines-animation.js"></script>
 
 </body>
 </html>
