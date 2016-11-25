@@ -8,8 +8,8 @@
 </head>
 <body>
 
-<div style="position: absolute; top: 0; left: 0;">
-    <a id="logo-container" href="/" class="brand-logo" ><img src="http://s216853.gridserver.com/custom/themes/revive/dist/images/revive.png" style="width: 40%; padding: 2em;"></a>
+<div style="position: absolute; top: 0; left: 0; z-index: 10;">
+    <a id="logo-container" href="/" class="brand-logo" ><img src="<?php echo get_template_directory_uri();?>/dist/images/revive.png" style="width: 40%; padding: 2em;"></a>
 </div>
 
 <div class="nav-wrapper" style="position: absolute; top: 0; right: 10px; z-index: 10;">
@@ -25,8 +25,14 @@
     <div class="col m6" style="padding:0;">
         <div class="parallax-container valign-wrapper" style="height: 100vh;">
             <div class="container">
-                <div class="row">
-                    <h5 class="header col s12 light">Revive Engineering works in partnership with architects, designers, and builders offering structural engineering solutions.  From home renovations and new builds to light commercial renovations, to specialized projects like timber buildings, and custom steel sculptures, we offer structural solutions.</h5>
+                <div class="row center">
+                    <h4 class="col s12">Revive Engineering works in partnership with architects, designers, and builders offering structural engineering solutions.  
+                    </h4>
+                </div>
+                <div class="row center">
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true" style="padding: .2em;"></i> 
+                    <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="padding: .2em;"></i> 
+                    <i class="fa fa-twitter-square fa-3x" aria-hidden="true" style="padding: .2em;"></i>
                 </div>
             </div>
             <div class="parallax overlay"><img src="<?php echo get_template_directory_uri();?>/dist/images/blueprint-bg.jpg"></div>

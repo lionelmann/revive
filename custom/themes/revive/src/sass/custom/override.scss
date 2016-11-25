@@ -8,10 +8,37 @@
 
  // Override gutter and columns
 
+ @mixin fontFace($family,$src,$style: normal,$weight: normal) {
+    @font-face {
+        font-family: $family;
+        //src: url('#{$src}.eot'); // IE9 compat
+        //src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
+        src: url('#{$src}.woff') format('woff'), // standards
+            url('#{$src}.ttf') format('truetype'); // Safari, Android, iOS
+            //url('#{$src}.svg##{$family}') format('svg'); // legacy iOS
+
+        font-style: $style;
+        font-weight: $weight;
+    }
+}
+
+//@import 'fontFace';
+@include fontFace('TradeGothicLTCom-Light','dist/fonts/tradegothic/TradeGothicLTCom-Light');
+@include fontFace('TradeGothicLTCom-Bold','dist/fonts/tradegothic/TradeGothicLTCom-Bold');
+@include fontFace('TradeGothicLTCom-Italic-Bold','dist/fonts/tradegothic/TradeGothicLTCom-BdCn20Obl');
+@include fontFace('TradeGothicLTCom-Italic','dist/fonts/tradegothic/TradeGothicLTCom-Cn18Obl');
+
+
 html{
+    font-family: TradeGothicLTCom-Light, Calibri, Trebuchet, sans-serif;
     @media only screen and (min-width: $large-screen) {
     font-size: 16px;
     }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: TradeGothicLTCom-Bold;
 }
 
 .nav-wrapper ul li {
@@ -74,48 +101,20 @@ button + label{
     margin-left: 1em;
 }
 
-.mixitup{
-  padding: 0% 2% 0;
-  text-align: justify;
-  -webkit-backface-visibility: hidden;
+
+.flex-grid {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: .5% 1% 1% 1%;
 }
 
-.mixitup:after{
-  content: '';
-  display: inline-block;
-  width: 100%;
+.flex-item {
+    flex-basis: 33%;
+    padding: 0 1%;
 }
 
-.mixitup .mix,
-.mixitup .gap{
-  display: inline-block;
-  width: 49%;
-}
-
-.mixitup .mix{
-  text-align: left;
-}
-
-@media all and (max-width: 528px){
-  .mixitup .mix,
-  .mixitup .gap{
-    width: 100%;
-  }
-}
-
-@media all and (min-width: 930px){
-  .mixitup .mix,
-  .mixitup .gap{
-    width: 32%;
-  }
-}
-
-@media all and (min-width: 1264px){
-  .mixitup .mix,
-  .mixitup .gap{
-    width: 32%;
-  }
-}
 
 .overlay {
     &:after {
@@ -125,7 +124,7 @@ button + label{
         right: 0;
         top: 0;
         height: 100%;
-        background-color: rgba(0,0,0,.4);
+        background-color: rgba(0,0,0,.5);
         z-index: 0;
     }
 }

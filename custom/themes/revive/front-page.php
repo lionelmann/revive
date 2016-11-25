@@ -1,9 +1,12 @@
 <?php get_header(); ?>
 
 
-<div id="Container" class="mixitup">
 
-    <div class="mix web">
+
+
+<div class="flex-grid">
+
+    <div class="flex-item">
         <div class="card">
             <div class="card-image">
                 <a href="#"><img class="responsive-img" src="<?php echo get_template_directory_uri();?>/dist/images/building1.jpg"></a>
@@ -15,7 +18,7 @@
         </div>
     </div>
 
-    <div class="mix web">
+    <div class="flex-item">
         <div class="card">
             <div class="card-image">
                 <a href="#"><img class="responsive-img" src="<?php echo get_template_directory_uri();?>/dist/images/building4.jpg"></a>
@@ -27,7 +30,7 @@
         </div>
     </div>
 
-    <div class="mix web">
+    <div class="flex-item">
         <div class="card">
             <div class="card-image">
                 <a href="#"><img class="responsive-img" src="<?php echo get_template_directory_uri();?>/dist/images/building3.jpg"></a>
@@ -39,7 +42,7 @@
         </div>
     </div>
 
-    <div class="mix web">
+    <div class="flex-item">
         <div class="card">
             <div class="card-image">
                 <a href="#"><img class="responsive-img" src="<?php echo get_template_directory_uri();?>/dist/images/building3.jpg"></a>
@@ -51,7 +54,7 @@
         </div>
     </div>
 
-    <div class="mix web">
+    <div class="flex-item">
         <div class="card">
             <div class="card-image">
                 <a href="#"><img class="responsive-img" src="<?php echo get_template_directory_uri();?>/dist/images/building3.jpg"></a>
@@ -63,7 +66,7 @@
         </div>
     </div>
 
-    <div class="mix web">
+    <div class="flex-item">
         <div class="card">
             <div class="card-image">
                 <a href="#"><img class="responsive-img" src="<?php echo get_template_directory_uri();?>/dist/images/building3.jpg"></a>
@@ -75,53 +78,6 @@
         </div>
     </div>
 </div>
-
-<!--
-
-<div class="row">
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="<?php echo get_template_directory_uri();?>/dist/images/building1.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="<?php echo get_template_directory_uri();?>/dist/images/building2.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="<?php echo get_template_directory_uri();?>/dist/images/building3.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            
-          </div>
-        </div>
-      </div>
--->
-
-  
 
     
 <?php get_footer(); ?>
