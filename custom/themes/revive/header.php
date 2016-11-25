@@ -22,7 +22,7 @@
 
 <?php if ( is_home() ) { ?>
 <div class="row">
-    <div class="col m6" style="padding:0;">
+    <div class="col s12 m6" style="padding:0;">
         <div class="parallax-container valign-wrapper" style="height: 100vh;">
             <div class="container">
                 <div class="row center">
@@ -38,7 +38,7 @@
             <div class="parallax overlay"><img src="<?php echo get_template_directory_uri();?>/dist/images/blueprint-bg.jpg"></div>
         </div>
     </div>
-    <div class="col m6 indigo lighten-5" style="height: 100vh;">
+    <div class="col s12 m6 indigo lighten-5" style="height: 100vh;">
         
     </div>
 </div>
