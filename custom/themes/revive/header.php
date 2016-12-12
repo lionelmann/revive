@@ -8,22 +8,26 @@
 </head>
 <body>
 
-<div style="position: absolute; top: 0; left: 0; z-index: 10;">
-    <a id="logo-container" href="/" class="brand-logo" ><img src="<?php echo get_template_directory_uri();?>/dist/images/revive.png" style="width: 40%; padding: 2em;"></a>
-</div>
+<div class="navbar-fixed" style="height: 80px;">
+    <nav role="navigation" style="height: 80px;">
+        <div class="nav-wrapper">
+            <a id="logo-container" href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand-logo"><img src="<?php echo get_template_directory_uri();?>/dist/images/revive.png" style="width: 30%;"></a>
+            <ul class="right hide-on-med-and-down">
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => false, 'items_wrap' => '%3$s') ); ?>
+            </ul>
 
-<div class="nav-wrapper" style="position: absolute; top: 0; right: 10px; z-index: 10;">
-    <ul class="right hide-on-med-and-down">
-        <li style="color: white;"><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/services">Services</a></li>
-    </ul>
+            <ul id="nav-mobile" class="side-nav">
+               <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => false, 'items_wrap' => '%3$s') ); ?>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
 </div>
 
 <?php if ( is_home() ) { ?>
 <div class="row">
     <div class="col s12 m6" style="padding:0;">
-        <div class="parallax-container valign-wrapper" style="height: 100vh;">
+        <div class="parallax-container valign-wrapper" style="height: 100vh; margin-top: -80px;">
             <div class="container">
                 <div class="row center">
                     <h4 class="col s12">Revive Engineering works in partnership with architects, designers, and builders offering structural engineering solutions.  
@@ -38,23 +42,8 @@
             <div class="parallax overlay"><img src="<?php echo get_template_directory_uri();?>/dist/images/blueprint-bg.jpg"></div>
         </div>
     </div>
-    <div class="col s12 m6 indigo lighten-5" style="height: 100vh;">
+    <div class="col s12 m6 indigo lighten-5" style="height: 100vh; margin-top: -80px;">
         
-    </div>
-</div>
-
-<?php } else { ?>
-
-<div class="row">
-    <div class="col m12" style="padding:0;">
-        <div class="parallax-container valign-wrapper">
-            <div class="container">
-                <div class="row">
-                    <h1 class="header col s12 light center"><?php the_title();?></h1>
-                </div>
-            </div>
-            <div class="parallax overlay"><img src="<?php echo get_template_directory_uri();?>/dist/images/building1.jpg"></div>
-        </div>
     </div>
 </div>
 

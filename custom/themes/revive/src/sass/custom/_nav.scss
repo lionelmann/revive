@@ -1,0 +1,42 @@
+nav {
+  	background: transparent;
+  	border: none;
+  	box-shadow: none;
+  	transition: 0.2s all linear;
+}
+
+nav img {
+  padding: .3em;
+}
+
+nav.change-color {
+  	background-color: #263238;
+}
+
+nav li a {
+	font-size: 16px;
+    padding: 8px 20px;
+}
+
+nav ul a:hover {
+    background-color: rgba(0,0,0,0.3);
+    border-bottom: 3px solid white;
+}
+
+nav.change-color li a {
+	color: white;
+}
+
+nav.change-color ul a:hover {
+    background-color: #78909c;
+}
+
+nav.change-color .button-collapse {
+    color: green;
+
+}
+
+#nav-mobile li a {
+	font-size: 16px;
+  background-color: yellow;
+}

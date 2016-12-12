@@ -14,6 +14,7 @@ var gulp 		= require('gulp'),
 var outputDir = 'dist';
 
 var scriptList = [
+    'src/js/wow.js',
     'src/js/materialize.js',
     'src/js/init.js', 
 ];
