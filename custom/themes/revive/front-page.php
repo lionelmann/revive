@@ -2,12 +2,34 @@
 
 <?php // Loop starts
 $args = array(
+    'post_type' => 'testimonials',
+    'orderby' => 'random',
+    );
+
+query_posts($args); ?>
+
+<div class="container ">
+    <div class="row section">
+        <div class="col s12 m10 offset-m2 ">
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>
+            <blockquote>
+                <?php echo the_content();?>
+            </blockquote>
+            <?php endwhile; else : ?>
+                <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
+
+<?php // Loop starts
+$args1 = array(
     'post_type' => 'service',
     'orderby' => 'menu_order',
     'order'   => 'ASC',
     );
 
-query_posts($args); ?>
+query_posts($args1); ?>
 
 <div class="flex-grid">
 

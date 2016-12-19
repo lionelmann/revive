@@ -19,7 +19,7 @@ function mq_register_team( $meta_boxes ) {
                 'name'  => __( 'LinkedIn', 'textdomain' ),
                 'desc'  => 'Add LinkedIn profile URL. Example: http://...',
                 'id'    => $prefix . 'linkedin',
-                'type'  => 'text',
+                'type'  => 'url',
                 'clone' => false,
             ),
         )

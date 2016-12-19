@@ -6,7 +6,7 @@
 <title>Revive Engineering</title>
 <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 
 <div class="navbar-fixed" style="height: 80px;">
     <nav role="navigation" style="height: 80px;">
@@ -39,10 +39,40 @@
                     <i class="fa fa-twitter-square fa-3x" aria-hidden="true" style="padding: .2em;"></i>
                 </div>
             </div>
-            <div class="parallax overlay"><img src="<?php echo get_template_directory_uri();?>/dist/images/blueprint-bg.jpg"></div>
+            <div class="parallax overlay"><img src="<?php echo get_template_directory_uri();?>/dist/images/structure_bg.jpg"></div>
         </div>
     </div>
-    <div class="col s12 m6 indigo lighten-5" style="height: 100vh; margin-top: -80px;">
+    <div class="col s12 m6  blue-grey lighten-5 valign-wrapper" style="height: 100vh; margin-top: -80px; ">
+
+    
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Textarea</label>
+        </div>
+      </div>
+      <button class="btn-large waves-effect waves-light right orange darken-1" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+    </form>
+ 
         
     </div>
 </div>

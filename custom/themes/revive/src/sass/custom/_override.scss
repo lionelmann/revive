@@ -8,6 +8,7 @@
 
  // Override gutter and columns
 
+
  @mixin fontFace($family,$src,$style: normal,$weight: normal) {
     @font-face {
         
@@ -41,6 +42,36 @@ html{
 
 h1, h2, h3, h4, h5, h6 {
     font-family: TradeGothicLTCom-Bold;
+}
+
+  //Variables 
+
+$white:   rgba(255,255,255,1);
+$black:   rgba(0,0,0,1);
+
+blockquote {
+    quotes: "\201C""\201D""\2018""\2019";
+    text-align: center;
+    padding: 1em 0 2em 0;
+    border-left: none;
+    font-size: 2em;
+
+    &:before, &:after {
+      font-family: 'Font Awesome';
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0;
+        vertical-align: -0.4em;
+        margin-right: 0.1em;
+    }
+    &:after {
+        content: close-quote;
+        margin-left: 0.1em;
+    }
+    p {
+        display: inline;
+        font-style: italic;
+    }
 }
 
 .button-collapse {
@@ -137,7 +168,34 @@ button + label{
         right: 0;
         top: 0;
         height: 100%;
-        background-color: rgba(0,0,0,.5);
+        background-color: rgba(0,0,0,.4);
         z-index: 0;
     }
+}
+
+// Service FORM
+footer form {
+   .input-field label {
+      color: darken($white, 10);
+    }
+  input[type=email] {
+    border-bottom: 1px solid $white;
+    color: $white;
+  }
+
+   /* label focus color */
+   .input-field input[type=email]:focus + label {
+      color: $white;
+      border-bottom: 1px solid $white;
+     
+   }
+   .input-field input[type=email]:focus {
+      border-bottom: 1px solid $white;
+      box-shadow: none;
+   }
+   .input-field input[type=email].valid {
+      border-bottom: 1px solid lighten($black, 70);
+      box-shadow: none;
+    }
+
 }

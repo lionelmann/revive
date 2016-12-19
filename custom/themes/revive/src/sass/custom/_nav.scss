@@ -16,6 +16,9 @@ nav.change-color {
 nav li a {
 	font-size: 16px;
     padding: 8px 20px;
+    .home & {
+        color: black;
+    }
 }
 
 nav ul a:hover {
