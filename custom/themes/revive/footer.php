@@ -5,14 +5,14 @@
                 <h4 class="white-text">Join our monthly newsletter</h4>
                 <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div class="row">
-                        <div class="col s12 m11">
+                        <div class="col s12">
                             <div class="input-field inline">
                                 <input type="hidden" value="2" name="group[2][2]" id="mce-group[2]-2-1">
                                 <label for="email" data-error="wrong" data-success="right">YOU@YOUREMAIL.COM</label>
                                 <input name="EMAIL" type="email" id="email" value=""  class="validate" id="mce-EMAIL" required>
                             </div>
                         </div>
-                        <div class="col s5 m11">
+                        <div class="col s12">
                             <div id="mce-responses" class="clear">
                                 <div class="response" id="mce-error-response" style="display:none"></div>
                                 <div class="response" id="mce-success-response" style="display:none"></div>
