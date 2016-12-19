@@ -3,7 +3,8 @@
 <?php // Loop starts
 $args = array(
     'post_type' => 'testimonials',
-    'orderby' => 'random',
+    'orderby' => 'rand',
+    'posts_per_page' => 1,
     );
 
 query_posts($args); ?>
@@ -18,6 +19,7 @@ query_posts($args); ?>
             <?php endwhile; else : ?>
                 <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
             <?php endif; ?>
+            <?php rewind_posts(); ?>
         </div>
     </div>
 </div>
