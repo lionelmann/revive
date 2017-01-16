@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-
-<?php // Loop starts
-$args = array(
+<!--
+<?php // Loop starts 
+$args /*= array(
     'post_type' => 'testimonials',
     'orderby' => 'rand',
     'posts_per_page' => 1,
@@ -11,7 +11,7 @@ query_posts($args); ?>
 
 <div class="container ">
     <div class="row section">
-        <div class="col s12 m10 offset-m2 ">
+        <div class="col s12 m10 offset-m1 ">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>
             <blockquote>
                 <?php echo the_content();?>
@@ -54,8 +54,8 @@ query_posts($args1); ?>
 
 <?php endwhile; else : ?>
     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-<?php endif; ?>
+<?php endif; */?>
 
-</div>
+</div>-->
 
 <?php get_footer(); ?>

@@ -199,3 +199,60 @@ footer form {
     }
 
 }
+
+.service {
+    a {
+        color: white;
+        border-bottom: 1px solid white;
+        &:hover {
+            border-bottom: none;
+        }
+    }
+    .cover {
+        background-size:cover;
+        background-position: center;
+    }
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .panel {
+        text-align: left;
+        height: 60vh;
+        width: 100%;
+    }
+    .sub-panel {
+        display: table;
+        &:nth-child(odd) {
+            direction: rtl;
+        }
+    }
+    .table-cell {
+        @media #{$small-and-down} {
+        display: table;
+        width: 100%;
+        padding: 2em;
+        direction: ltr;
+        }
+            display: table-cell;
+            width: 50%;
+            vertical-align: middle;
+            padding: 5em 2em 5em 2em;
+            direction: ltr;
+    }
+    ul {
+        margin-left: 20px;
+    }
+    li {
+        margin: .5em 0;
+        padding-left: 24px;
+    }
+    li:before {
+        content: '\f00c';
+        font-family: FontAwesome;
+        color: $white;
+        margin-left: -24px;
+        padding-right: 10px;
+    }
+}
