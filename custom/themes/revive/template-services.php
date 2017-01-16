@@ -45,7 +45,8 @@ get_header(); ?>
         <div class="table-cell">
             <div class="row">
             <div class="col s12 m8 offset-m2 l9 offset-l1">
-            <p style="font-size: 1.5em;"><?php echo $content; ?></p>
+            <h4 ><?php echo get_the_excerpt(); ?></h4>
+            <p style="font-size: 1.3em;"><?php echo $content; ?></p>
             </div>
             </div>
         </div>
