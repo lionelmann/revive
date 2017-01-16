@@ -40,7 +40,7 @@ get_header(); ?>
 
     <section class="panel sub-panel wow fadeIn">
         <span class="table-cell cover panel" style="background-image: url('<?php echo $image[0]; ?>');">
-            <h4 class="white-text center" ><?php the_title();?></h4>
+            <h3 class="white-text center" ><?php the_title();?></h3>
         </span>
         <div class="table-cell">
             <div class="row">
