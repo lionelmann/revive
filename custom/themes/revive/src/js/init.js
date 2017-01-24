@@ -23,3 +23,17 @@ jQuery(document).ready(function($) {
         }
     });
 });
+
+//Nav bar change color on scroll
+jQuery(document).ready(function($) {
+    $(window).scroll(function() {
+        var scrollPos = $(window).scrollTop(),
+            logo = $('.brand-logo');
+
+        if (scrollPos > 50) {
+            logo.addClass('change-size');
+        } else {
+            logo.removeClass('change-size');
+        }
+    });
+});
