@@ -39,6 +39,12 @@ jQuery(document).ready(function($){
       $('.parallax').parallax();
     });
 
+jQuery(document).ready(function($){
+    $('.scrollspy').scrollSpy({
+        scrollOffset: 110
+    });
+  });
+
 </script>
 
 </body>

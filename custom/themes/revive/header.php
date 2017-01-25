@@ -48,9 +48,9 @@
     $title = $queried_post->post_title;
     $content  = wpautop($queried_post->post_content);
 ?>
-<a name="about"></a>
+
 <div class="container">
-    <div class="row section">
+    <div id="about" class="row section scrollspy">
         <div class="col s12 m10 offset-m1 large-font">
             <?php echo $content; ?>
         </div>
@@ -91,8 +91,7 @@ $args1 = array(
 
 query_posts($args1); ?>
 
-<a name="services"></a>
-<div class="row">
+<div id="services" class="row scrollspy">
     <div class="col s12">
         <div class="flex-grid">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
@@ -118,8 +117,7 @@ $args2 = array(
 
 query_posts($args2); ?>
 
-<a name="team"></a>
-<section style="background-color: #e0f2f1;">
+<section id="team" class="scrollspy" style="background-color: #e0f2f1;">
 <div class="container">
     <div class="row section" style="margin-bottom: 0;">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
