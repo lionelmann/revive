@@ -27,7 +27,6 @@
 <div id="index-banner" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
         <div class="container">
-
             <h3 class="col m12 center">Revive Engineering works in partnership with architects, designers, and builders offering structural engineering solutions.</h3>
             <div class="row center">
              <div class="row center">
@@ -41,6 +40,20 @@
     <div class="parallax overlay"><img src="<?php echo get_template_directory_uri();?>/dist/images/structure_bg.jpg"></div>
 </div>
 
+<?php
+    $post_id = 7;
+    $queried_post = get_post($post_id);
+    $title = $queried_post->post_title;
+    $content  = wpautop($queried_post->post_content);
+?>
+
+<div class="container">
+    <div class="row section">
+        <div class="col s12 m10 offset-m1 large-font">
+            <?php echo $content; ?>
+        </div>
+    </div>
+</div>
 
 <?php // Loop starts 
 $args = array(
@@ -50,10 +63,10 @@ $args = array(
     );
 
 query_posts($args); ?>
-<section class="grey lighten-5">
-<div class="container ">
-    <div class="row section" style="margin-bottom: 0;">
-        <div class="col s12 m10 offset-m1 ">
+
+<div class="parallax-container valign-wrapper" style=" min-height: 500px;">
+<div class="section no-pad-bot">
+        <div class="container">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>
             <blockquote>
                 <?php echo the_content();?>
@@ -64,9 +77,26 @@ query_posts($args); ?>
             <?php rewind_posts(); ?>
         </div>
     </div>
+    <div class="parallax overlay"><img src="http://revive.dev/custom/uploads/2016/12/tree-trunks-1535531_1280-1200x800.jpg"></div>
+</div>
+<!--
+<section style="background-image:url('http://revive.dev/custom/uploads/2016/12/tree-trunks-1535531_1280-1200x800.jpg'); height: 500px;">
+<div class="container ">
+    <div class="row section">
+        <div class="col s12 m10 offset-m1 ">
+            <?php //if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>
+            <blockquote>
+                <?php //echo the_content();?>
+            </blockquote>
+            <?php //endwhile; else : ?>
+                <p><?php //_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+            <?php //endif; ?>
+            <?php rewind_posts(); ?>
+        </div>
+    </div>
 </div>
 </section>
-
+-->
 <?php // Loop starts
 $args1 = array(
     'post_type' => 'service',
@@ -76,31 +106,20 @@ $args1 = array(
 
 query_posts($args1); ?>
 
-<div class="service">
-
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
-    $content    = get_the_content();
-    $image      = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); 
-?>
-
-<section class="panel sub-panel wow fadeIn">
-        <span class="table-cell cover panel" style="background-image: url('<?php echo $image[0]; ?>');">
-            <h3 class="white-text center" ><?php the_title();?></h3>
-        </span>
-        <div class="table-cell">
-            <div class="row">
-            <div class="col s12 m8 offset-m2 l9 offset-l1">
-            <h4 ><?php echo get_the_excerpt(); ?></h4>
-            <p style="font-size: 1.3em;"><?php echo $content; ?></p>
-            </div>
-            </div>
+<div class="row">
+    <div class="col s12">
+        <div class="flex-grid">
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+            $content    = get_the_content();
+            $excerpt = get_the_excerpt();
+        ?>
+        <div class="flex-item">
+            <h5 class="center"><?php echo the_title();?></h5>
+            <p style="font-size: 1.2em;"><?php echo $content;?></p>
         </div>
-    </section>
-
-<?php endwhile; else : ?>
-    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-<?php endif; ?>
-
+        <?php endwhile; else : ?>
+            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+        <?php endif; ?>
+        </div>
+    </div>
 </div>
-
-

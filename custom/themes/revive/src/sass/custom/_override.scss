@@ -58,10 +58,25 @@ $white:   rgba(255,255,255,1);
 $black:   rgba(0,0,0,1);
 
 blockquote {
-    border-left: 10px solid #f57c00;
+    text-align: center;
+    border: none;
     margin: 1.5em 10px;
     padding: 0.5em 30px;
-    font-size: 1.4em;
+    font-size: 1.7em;
+    line-height: 1.8em;
+    font-weight: bold;
+    &:before, &:after {
+       font-family: 'Font Awesome';
+        content: open-quote;
+       font-size: 4em;
+       line-height: 0;
+      vertical-align: -0.4em;
+       margin-right: 0.1em;
+     }
+     &:after {
+         content: close-quote;
+         margin-left: 0.1em;
+    }
     p {
         display: inline;
     }
@@ -130,7 +145,7 @@ button + label{
     display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     flex-flow: row wrap;
-    padding: .5% 1% 1% 1%;
+    padding: 8% 2% 8% 2%;
 }
 
 @media #{$small-and-down} {
@@ -138,11 +153,26 @@ button + label{
         padding: 1em;
     }
 }
-
-
+//border-bottom: 2px solid grey;
 .flex-item {
     flex-basis: calc(100%/3);
-    padding: 0% 1%;
+    padding: 2% 4%;
+    &:nth-child(2) {
+        border-right: 2px solid lighten($black, 90);
+        border-left: 2px solid lighten($black, 90);
+    }
+    &:nth-child(5) {
+        border-top: 2px solid lighten($black, 90);
+        border-right: 2px solid lighten($black, 90);
+        border-left: 2px solid lighten($black, 90);
+    }
+    &:nth-child(4) {
+        border-top: 2px solid lighten($black, 90);
+    }
+    &:nth-child(6) {
+        border-top: 2px solid lighten($black, 90);
+    }
+
 }
 
 @media #{$small-and-down} {
@@ -248,4 +278,13 @@ footer form {
         margin-left: -24px;
         padding-right: 10px;
     }
+}
+
+.large-font p {
+    font-size: 1.2em;
+    &:first-child {
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+
 }
