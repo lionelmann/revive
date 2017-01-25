@@ -16,7 +16,8 @@
              <li><a href="#about">About</a></li>
              <li><a href="#team">Team</a></li>
              <li><a href="#services">Services</a></li>
-             <li><a href="#">Work with Us</a></li>
+             <li><a href="#contact">Work with Us</a></li>
+
             <?php //wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => false, 'items_wrap' => '%3$s') ); ?>
             </ul>
 
@@ -29,18 +30,28 @@
     </nav>
 </div>
 
+<div style="position: absolute;  bottom: 0%;  
+    left: 50%;
+
+    transform: translate(-50%, -50%); color: white;">
+<i class="material-icons">arrow_downward</i>
+</div>
+
 <div id="index-banner" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
         <div class="container">
             <h3 class="col m12 center">Revive Engineering works in partnership with architects, designers, and builders offering structural engineering solutions.</h3>
             <div class="row center section">
          
-            <a class="waves-effect waves-light btn-large orange darken-1">Let's Work Together</a>
+            <a href="#contact" class="button-custom">Let's Work Together</a>
             </div>
         </div>
     </div>
     <div class="parallax overlay"><img src="<?php echo get_template_directory_uri();?>/dist/images/structure_bg.jpg"></div>
 </div>
+
+
+
 
 <?php
     $post_id = 7;
@@ -143,3 +154,14 @@ query_posts($args2); ?>
         </div>
         </div>
 </section>
+
+<section class=" teal lighten-3 white-text scrollspy" id="contact">
+<div class="container">
+<div class="row section">
+<div class="col s12 m8 offset-m2">
+<h2 class="center">Let's Work Together</h2>
+
+<?php echo do_shortcode('[contact-form-7 id="51" title="Contact form 1"]'); ?>
+</div>
+</div>
+</div>

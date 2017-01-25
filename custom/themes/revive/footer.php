@@ -41,7 +41,7 @@ jQuery(document).ready(function($){
 
 jQuery(document).ready(function($){
     $('.scrollspy').scrollSpy({
-        scrollOffset: 110
+        scrollOffset: 80
     });
   });
 
