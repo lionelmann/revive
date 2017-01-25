@@ -1,4 +1,4 @@
-<footer class="page-footer grey darken-1">
+<footer class="page-footer grey darken-2">
     <div class="container">
         <div class="row">
             <div class="col s12 m8 offset-m2 ">
@@ -27,7 +27,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-        Copyright
+        <small>Copyright. ALL Rights Reserved.</small>
         </div>
     </div>
 </footer>

@@ -13,11 +13,16 @@
         <div class="nav-wrapper">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="brand-logo" src="<?php echo get_template_directory_uri();?>/dist/images/revive.png"></a>
             <ul class="right hide-on-med-and-down">
-            <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => false, 'items_wrap' => '%3$s') ); ?>
+             <li><a href="#about">About</a></li>
+             <li><a href="#team">Team</a></li>
+             <li><a href="#services">Services</a></li>
+             <li><a href="#">Work with Us</a></li>
+            <?php //wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => false, 'items_wrap' => '%3$s') ); ?>
             </ul>
 
             <ul id="nav-mobile" class="side-nav">
-               <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => false, 'items_wrap' => '%3$s') ); ?>
+            <li>About</li>
+               <?php //wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => false, 'items_wrap' => '%3$s') ); ?>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
@@ -28,12 +33,9 @@
     <div class="section no-pad-bot">
         <div class="container">
             <h3 class="col m12 center">Revive Engineering works in partnership with architects, designers, and builders offering structural engineering solutions.</h3>
-            <div class="row center">
-             <div class="row center">
-                    <a href="https://www.instagram.com/msrpeng/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true" style="padding: .2em; color: white;"></i></a>
-                    <a href="https://www.facebook.com/ReviveEngineering/" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="padding: .2em; color: white;"></i></a>
-                    <a href="https://twitter.com/msrpeng" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true" style="padding: .2em; color: white;"></i></a>
-                </div>
+            <div class="row center section">
+         
+            <a class="waves-effect waves-light btn-large orange darken-1">Let's Work Together</a>
             </div>
         </div>
     </div>
@@ -46,7 +48,7 @@
     $title = $queried_post->post_title;
     $content  = wpautop($queried_post->post_content);
 ?>
-
+<a name="about"></a>
 <div class="container">
     <div class="row section">
         <div class="col s12 m10 offset-m1 large-font">
@@ -79,24 +81,7 @@ query_posts($args); ?>
     </div>
     <div class="parallax overlay"><img src="http://revive.dev/custom/uploads/2016/12/tree-trunks-1535531_1280-1200x800.jpg"></div>
 </div>
-<!--
-<section style="background-image:url('http://revive.dev/custom/uploads/2016/12/tree-trunks-1535531_1280-1200x800.jpg'); height: 500px;">
-<div class="container ">
-    <div class="row section">
-        <div class="col s12 m10 offset-m1 ">
-            <?php //if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>
-            <blockquote>
-                <?php //echo the_content();?>
-            </blockquote>
-            <?php //endwhile; else : ?>
-                <p><?php //_e( 'Sorry, no posts matched your criteria.' ); ?></p>
-            <?php //endif; ?>
-            <?php rewind_posts(); ?>
-        </div>
-    </div>
-</div>
-</section>
--->
+
 <?php // Loop starts
 $args1 = array(
     'post_type' => 'service',
@@ -106,6 +91,7 @@ $args1 = array(
 
 query_posts($args1); ?>
 
+<a name="services"></a>
 <div class="row">
     <div class="col s12">
         <div class="flex-grid">
@@ -123,3 +109,39 @@ query_posts($args1); ?>
         </div>
     </div>
 </div>
+
+<?php // Loop starts
+$args2 = array(
+    'post_type' => 'team',
+    'order'   => 'DESC',
+    );
+
+query_posts($args2); ?>
+
+<a name="team"></a>
+<section style="background-color: #e0f2f1;">
+<div class="container">
+    <div class="row section" style="margin-bottom: 0;">
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+            $content   = get_the_content();   
+        ?>
+        <div class="col s12 m6 center" style="padding: 2em;">
+            <img class="circle esponsive-img" style="width: 70%;" src="<?php the_post_thumbnail_url(); ?>"/>
+            <h3 style="text-align: left"><?php echo the_title();?></h3>
+            <p style="font-size: 1.2em; text-align: left;"><?php echo $content;?></p>
+        </div>      
+    
+<?php endwhile; else : ?>
+            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+        <?php endif; ?>
+
+       
+             <div class="row center">
+                    <a href="https://www.instagram.com/msrpeng/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true" style="padding: .2em; color: black;"></i></a>
+                    <a href="https://www.facebook.com/ReviveEngineering/" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="padding: .2em; color: black;"></i></a>
+                    <a href="https://twitter.com/msrpeng" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true" style="padding: .2em; color: black;"></i></a>
+                </div>
+            
+        </div>
+        </div>
+</section>
