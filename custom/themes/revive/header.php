@@ -33,7 +33,7 @@
 <section id="top">
 <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
-        <div class="container">
+        <div class="container wow fadeIn">
             <h3 class="col m12 center">Revive Engineering works in partnership with architects, designers, and builders offering structural engineering solutions.</h3>
             <div class="row center section">
             <br><br>
@@ -41,7 +41,7 @@
             </div>
         </div>
     </div>
-    <div class="parallax overlay"><img src="<?php echo get_template_directory_uri();?>/dist/images/structure_bg.jpg"></div>
+    <div class="parallax overlay"><img src="<?php echo get_home_url(); ?>/custom/uploads/2017/01/boys-1149665_1280.jpg"></div>
 </div>
 </section>
 
@@ -103,7 +103,7 @@
             $content = get_the_content();
             $excerpt = get_the_excerpt();
         ?>
-        <div class="flex-item">
+        <div class="flex-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
             <h5 class="center"><?php echo the_title();?></h5>
             <p style="font-size: 1.2em;"><?php echo $content;?></p>
         </div>
