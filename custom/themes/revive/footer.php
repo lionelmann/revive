@@ -1,4 +1,4 @@
-<footer class="page-footer grey darken-2">
+<footer class="page-footer" style="background-color: #37474f;">
     <div class="container">
         <div class="row">
             <div class="col s12 m8 offset-m2 ">

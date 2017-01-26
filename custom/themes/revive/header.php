@@ -30,11 +30,8 @@
     </nav>
 </div>
 
-<div style="position: absolute;  bottom: 0%;  
-    left: 50%;
-
-    transform: translate(-50%, -50%); color: white;">
-<i class="material-icons">arrow_downward</i>
+<div style="position: absolute;  bottom: 0%; left: 50%; transform: translate(-50%, -50%); color: white;">
+    <i class="material-icons">arrow_downward</i>
 </div>
 
 <div id="index-banner" class="parallax-container valign-wrapper">
@@ -128,14 +125,14 @@ $args2 = array(
 
 query_posts($args2); ?>
 
-<section id="team" class="scrollspy" style="background-color: #e0f2f1;">
+<section id="team" class="scrollspy" style="background-color: #eceff1;">
 <div class="container">
     <div class="row section" style="margin-bottom: 0;">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
             $content   = get_the_content();   
         ?>
         <div class="col s12 m6 center" style="padding: 2em;">
-            <img class="circle esponsive-img" style="width: 70%;" src="<?php the_post_thumbnail_url(); ?>"/>
+            <img class="circle esponsive-img" style="width: 70%; border: 1px solid white;" src="<?php the_post_thumbnail_url(); ?>"/>
             <h3 style="text-align: left"><?php echo the_title();?></h3>
             <p style="font-size: 1.2em; text-align: left;"><?php echo $content;?></p>
         </div>      
@@ -146,16 +143,16 @@ query_posts($args2); ?>
 
        
              <div class="row center">
-                    <a href="https://www.instagram.com/msrpeng/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true" style="padding: .2em; color: black;"></i></a>
-                    <a href="https://www.facebook.com/ReviveEngineering/" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="padding: .2em; color: black;"></i></a>
-                    <a href="https://twitter.com/msrpeng" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true" style="padding: .2em; color: black;"></i></a>
+                    <a href="https://www.instagram.com/msrpeng/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true" style="padding: .2em; color: #37474f;"></i></a>
+                    <a href="https://www.facebook.com/ReviveEngineering/" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="padding: .2em; color: #37474f;"></i></a>
+                    <a href="https://twitter.com/msrpeng" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true" style="padding: .2em; color: #37474f;"></i></a>
                 </div>
             
         </div>
         </div>
 </section>
 
-<section class=" teal lighten-3 white-text scrollspy" id="contact">
+<section class="white-text scrollspy" id="contact" style="background-color: #607d8b;">
 <div class="container">
 <div class="row section">
 <div class="col s12 m8 offset-m2">
