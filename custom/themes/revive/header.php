@@ -87,8 +87,9 @@ query_posts($args); ?>
             <?php rewind_posts(); ?>
         </div>
     </div>
-    <div class="parallax overlay"><img src="http://revive.dev/custom/uploads/2016/12/tree-trunks-1535531_1280-1200x800.jpg"></div>
+    <div class="parallax overlay"><img src="<?php echo get_home_url(); ?>/custom/uploads/2016/12/tree-trunks-1535531_1280-1200x800.jpg"></div>
 </div>
+
 
 <?php // Loop starts
 $args1 = array(
