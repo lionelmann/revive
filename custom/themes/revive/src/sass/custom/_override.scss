@@ -84,22 +84,22 @@ $black:   rgba(0,0,0,1);
 blockquote {
     text-align: center;
     border: none;
-    margin: 1.5em 10px;
-    padding: 0.5em 30px;
+    margin-top: 0;
+    padding: 0.5em;
     font-size: 1.7em;
     line-height: 1.8em;
     font-weight: bold;
     &:before, &:after {
        font-family: 'Font Awesome';
         content: open-quote;
-       font-size: 4em;
-       line-height: 0;
-      vertical-align: -0.4em;
-       margin-right: 0.1em;
-     }
+        font-size: 4em;
+        line-height: 0;
+        vertical-align: -0.4em;
+        margin-right: 0.1em;
+    }
      &:after {
-         content: close-quote;
-         margin-left: 0.1em;
+        content: close-quote;
+        margin-left: 0.1em;
     }
     p {
         display: inline;

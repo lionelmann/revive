@@ -5,6 +5,12 @@ nav {
   	transition: 0.2s all linear;
 }
 
+nav a.active {
+  background-color: rgba(0,0,0,0.3);
+    border-bottom: 3px solid white;
+
+}
+
 nav img {
   padding: .3em;
 }

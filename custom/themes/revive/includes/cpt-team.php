@@ -15,6 +15,13 @@ function mq_register_team( $meta_boxes ) {
                 'type'  => 'text',
                 'clone' => false,
             ),
+             array(
+                'name'  => __( 'Credentials', 'textdomain' ),
+                'desc'  => '',
+                'id'    => $prefix . 'creds',
+                'type'  => 'text',
+                'clone' => false,
+            ),
             array(
                 'name'  => __( 'LinkedIn', 'textdomain' ),
                 'desc'  => 'Add LinkedIn profile URL. Example: http://...',
