@@ -19,6 +19,8 @@
 
 <body <?php body_class(); ?>>
 
+<?php include_once("analyticstracking.php") ?>
+
 <section class="navbar-fixed menu">
     <nav role="navigation">
         <div class="nav-wrapper">
