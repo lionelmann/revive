@@ -19,8 +19,8 @@
 
 <body <?php body_class(); ?>>
 
-<section class="navbar-fixed menu" style="height: 80px; position: fixed;">
-    <nav role="navigation" style="height: 80px;">
+<section class="navbar-fixed menu">
+    <nav role="navigation">
         <div class="nav-wrapper">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="brand-logo" src="<?php echo get_template_directory_uri();?>/dist/images/revive.png"></a>
             <ul class="right hide-on-med-and-down">
@@ -35,7 +35,7 @@
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Work with Us</a></li>
             </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons menu">menu</i></a>
         </div>
     </nav>
 </section>

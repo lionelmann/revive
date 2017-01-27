@@ -52,6 +52,10 @@
     .flex-item {
         flex-basis: 100%;
         padding: 0% 0%;
+        margin: 1.5em 0;
+        &:nth-child(2), &:nth-child(5), &:nth-child(4), &:nth-child(6) {
+        border: none;
+        }
     }
 }
 

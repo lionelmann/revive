@@ -4,4 +4,10 @@
   	&.change-size {
     	width: 18%;
   	}
+  	@media #{$small-and-down} {
+  		width: 50%;
+  		&.change-size {
+    	width: 40%;
+  	}
+  	}
 }
