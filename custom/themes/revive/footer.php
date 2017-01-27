@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col s12 m8 offset-m2 ">
-                <h4 class="white-text">Join our monthly newsletter</h4>
+                <h2 class="white-text">Join our monthly newsletter</h2>
                 <form action="//ReviveEngineering.us14.list-manage.com/subscribe/post?u=399348c1962fc618a42b72d19&amp;id=d41076aadd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div class="row">
                         <div class="col s12">
