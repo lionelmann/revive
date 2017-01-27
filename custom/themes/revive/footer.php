@@ -1,7 +1,15 @@
 <footer class="page-footer">
     <div class="container">
         <div class="row">
-            <div class="col s12 m8 offset-m2 ">
+            <div class="col s12 m5 white-text">
+                <h2>Contact Us</h2>
+                <p>T: 647-648-3963<br>
+                E: <a href="mailto:mreid@reviveng.com" class="white-text">Email Us</a>
+                </p>
+
+
+            </div>
+            <div class="col s12 m7">
                 <h2 class="white-text">Join our monthly newsletter</h2>
                 <form action="//ReviveEngineering.us14.list-manage.com/subscribe/post?u=399348c1962fc618a42b72d19&amp;id=d41076aadd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div class="row">
