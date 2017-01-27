@@ -1,0 +1,7 @@
+.brand-logo {
+ 	width: 25%;
+  	transition: 0.2s all linear;
+  	&.change-size {
+    	width: 18%;
+  	}
+}

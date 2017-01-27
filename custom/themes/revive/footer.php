@@ -1,9 +1,9 @@
-<footer class="page-footer" style="background-color: #37474f;">
+<footer class="page-footer">
     <div class="container">
         <div class="row">
             <div class="col s12 m8 offset-m2 ">
                 <h4 class="white-text">Join our monthly newsletter</h4>
-                <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <form action="//ReviveEngineering.us14.list-manage.com/subscribe/post?u=399348c1962fc618a42b72d19&amp;id=d41076aadd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div class="row">
                         <div class="col s12">
                             <div class="input-field inline">
@@ -18,7 +18,7 @@
                                 <div class="response" id="mce-success-response" style="display:none"></div>
                             </div>
                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_161ababe722ef78f40ab203a0_6bbf4149fe" tabindex="-1" value=""></div>
-                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-large waves-effect waves-light orange darken-1 right"></div>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button-form right"></div>
                         </div>
                     </div>
                 </form>
@@ -27,51 +27,12 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-        <small>Copyright. ALL Rights Reserved.</small>
+        <small>&copy; Copyright <?php echo date("Y"); ?>. All Rights Reserved.</small>
         </div>
     </div>
 </footer>
 
 <?php wp_footer(); ?> 
-
-<script>
-jQuery(document).ready(function($){
-      $('.parallax').parallax();
-    });
-
-jQuery(document).ready(function($){
-    $('.scrollspy').scrollSpy({
-        scrollOffset: 80
-    });
-  });
-
-</script>
-
-<script type="text/javascript">
-jQuery(document).ready(function($){
-    var sections = $('section')
-  , nav = $('.menu')
-  , nav_height = nav.outerHeight();
-
-$(window).on('scroll', function () {
-  var cur_pos = $(this).scrollTop();
-  
-  sections.each(function() {
-    var top = $(this).offset().top - nav_height,
-        bottom = top + $(this).outerHeight();
-    
-    if (cur_pos >= top && cur_pos <= bottom) {
-      nav.find('a').removeClass('active');
-      sections.removeClass('active');
-      
-      $(this).addClass('active');
-      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-    }
-  });
-});
-});
-
-</script>
 
 </body>
 </html>

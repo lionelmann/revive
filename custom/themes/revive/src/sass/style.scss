@@ -8,7 +8,15 @@ Version: 1.0
 */
 
 @import "materialize/materialize";
-
-@import "_animate.scss";
-@import "custom/_override";
+@import "custom/_variables";
+@import "custom/_typography";
+@import "custom/_blockquote";
+@import "custom/_buttons";
+@import "custom/_form";
+@import "custom/_overlay";
+@import "custom/_logo";
+@import "custom/_layout";
+@import "custom/_parallax";
 @import "custom/_nav";
+@import "custom/_icons";
+@import "_animate.scss";

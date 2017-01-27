@@ -1,0 +1,42 @@
+@mixin fontFace($family,$src,$style: normal,$weight: normal) {
+    @font-face {
+        
+        font-family: $family;
+        //src: url('#{$src}.eot'); // IE9 compat
+        //src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
+        src: url('#{$src}.woff') format('woff'), // standards
+            url('#{$src}.ttf') format('truetype'); // Safari, Android, iOS
+            //url('#{$src}.svg##{$family}') format('svg'); // legacy iOS
+
+        font-style: $style;
+        font-weight: $weight;
+    }
+}
+
+//@import 'fontFace';
+@include fontFace('TradeGothicLTCom-Light','dist/fonts/tradegothic/TradeGothicLTCom-Light');
+@include fontFace('TradeGothicLTCom-Bold','dist/fonts/tradegothic/TradeGothicLTCom-Bold');
+@include fontFace('TradeGothicLTCom-Italic-Bold','dist/fonts/tradegothic/TradeGothicLTCom-BdCn20Obl');
+@include fontFace('TradeGothicLTCom-Italic','dist/fonts/tradegothic/TradeGothicLTCom-Cn18Obl');
+
+
+html{
+    font-family: TradeGothicLTCom-Light, Calibri, Trebuchet, sans-serif;
+    @media only screen and (min-width: $large-screen) {
+    font-size: 16px;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: TradeGothicLTCom-Bold;
+}
+
+.large-font p {
+    font-size: 1.2em;
+    &:first-child {
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+
+}
