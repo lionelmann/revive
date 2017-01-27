@@ -99,7 +99,8 @@
                 $role = rwmb_meta( 'rw_role' );
                 $linkedin = rwmb_meta( 'rw_linkedin' );
             ?>
-            <div class="col s12 m6" style="padding: 2em;">
+            <div class="col s12 m6">
+            <div class="team">
                 <div class="center">
                     <img class="circle esponsive-img avatar" src="<?php the_post_thumbnail_url(); ?>"/>
                 </div>
@@ -110,10 +111,8 @@
             <?php endif ?>
                 <p class="large-font"><?php echo $content;?></p>
             </div>      
-    
-            <?php endwhile; else : ?>
-                <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-            <?php endif; ?>
+            </div>
+            <?php endwhile; endif; ?>
         </div>
         <div class="row center section no-pad-bottom">
             <a href="https://www.instagram.com/msrpeng/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true" ></i></a>
