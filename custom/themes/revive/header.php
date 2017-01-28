@@ -7,7 +7,7 @@
 <meta name="description" content="<?php bloginfo('description'); ?>" />
 <meta property="og:site_name" content="<?php bloginfo('name') ?>">
 <meta property="og:title" content="<?php bloginfo('name') ?>">
-<meta property="og:description" content="Revive Engineering works in partnership with architects, designers, and builders offering structural engineering solutions.">
+<meta property="og:description" content="<?php bloginfo('description'); ?>">
 <meta property="og:image" content="<?php bloginfo('template_url' ); ?>/dist/images/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri();?>/dist/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="<?php echo get_template_directory_uri();?>/dist/images/favicon-96x96.png">
