@@ -5,11 +5,17 @@
 	transform: 
 	translate(-50%, -50%); 
 	color: white;
+	@media #{$small-and-down} {
+		display: none;
+	}
 }
 
 .fa {
-	padding: .2em; 
-	//color: #37474f;
+	padding-right: .2em; 
+	color: $white;
+	&:hover {
+		opacity: 0.8;
+	}
 }
 
 .avatar {

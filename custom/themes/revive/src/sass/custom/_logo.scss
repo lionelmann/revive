@@ -1,13 +1,13 @@
 .brand-logo {
- 	width: 25%;
+ 	width: 300px;
   	transition: 0.2s all linear;
   	&.change-size {
-    	width: 18%;
+    	width: 220px;
   	}
   	@media #{$small-and-down} {
-  		width: 50%;
+  		width: 150px;
   		&.change-size {
-    	width: 40%;
+    	width: 150px;
   	}
   	}
 }

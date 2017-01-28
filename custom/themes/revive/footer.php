@@ -6,8 +6,9 @@
                 <p>T: 647-648-3963<br>
                 E: <a href="mailto:mreid@reviveng.com" class="white-text">Email Us</a>
                 </p>
-
-
+                <a href="https://www.instagram.com/msrpeng/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true" ></i></a>
+                <a href="https://www.facebook.com/ReviveEngineering/" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/msrpeng" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
             </div>
             <div class="col s12 m7">
                 <h2 class="white-text">Join our monthly newsletter</h2>

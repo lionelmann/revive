@@ -3,10 +3,10 @@
 <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
         <div class="container wow fadeIn">
-            <h1 class="col m12 center">Revive Engineering works in partnership with architects, designers, and builders offering structural engineering solutions.</h1>
-            <div class="row center section">
-            <br><br>
-            <a href="#contact" class="button-custom">Let's Work Together</a>
+            <div class="col s12 center">
+                <h1>Revive Engineering works in partnership with architects, designers, and builders offering structural engineering solutions.</h1>
+                <br>
+                <a href="#contact" class="button-custom">Let's Work Together</a> 
             </div>
         </div>
     </div>
@@ -113,12 +113,7 @@
             </div>      
             </div>
             <?php endwhile; endif; ?>
-        </div>
-        <div class="row center section no-pad-bottom">
-            <a href="https://www.instagram.com/msrpeng/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true" ></i></a>
-            <a href="https://www.facebook.com/ReviveEngineering/" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/msrpeng" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
-        </div>    
+        </div>   
     </div>
 </section>
 
