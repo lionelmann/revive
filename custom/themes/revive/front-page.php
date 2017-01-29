@@ -71,7 +71,7 @@
             $content = get_the_content();
             $excerpt = get_the_excerpt();
         ?>
-        <div class="flex-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+        <div class="flex-item">
             <h4 class="center"><?php echo the_title();?></h4>
             <p class="large-font"><?php echo $content;?></p>
         </div>
