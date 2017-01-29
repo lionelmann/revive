@@ -12,7 +12,6 @@
     </div>
     <div class="parallax overlay"><img src="<?php echo get_home_url(); ?>/custom/uploads/2017/01/boys-1149665_1280.jpg"></div>
 </div>
-<i class="material-icons arrow">arrow_downward</i>
 
 <!-- ABOUT STARTS -->
 <section id="about" class="scrollspy">
