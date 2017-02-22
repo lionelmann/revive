@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col s12 m5 white-text">
                 <h2>Contact Us</h2>
-                <p>T: 647-648-3963<br>
+                <p>T: 647-648-3969<br>
                 E: <a href="mailto:mreid@reviveng.com" class="white-text">Email Us</a>
                 </p>
                 <a href="https://www.instagram.com/msrpeng/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true" ></i></a>
