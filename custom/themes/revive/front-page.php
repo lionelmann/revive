@@ -85,7 +85,7 @@
     <?php
     $args2 = array(
         'post_type' => 'team',
-        'order'   => 'DESC',
+        'order'   => 'ASC',
         );
 
     query_posts($args2); ?>
@@ -98,7 +98,7 @@
                 $role = rwmb_meta( 'rw_role' );
                 $linkedin = rwmb_meta( 'rw_linkedin' );
             ?>
-            <div class="col s12 m6">
+            <div class="col s12 m4">
             <div class="team">
                 <div class="center">
                     <img class="circle esponsive-img avatar" src="<?php the_post_thumbnail_url(); ?>"/>
