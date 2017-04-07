@@ -116,7 +116,7 @@
     </div>
 </section>
 
-<!-- LET'S WORK TOGETHER STARTS -->
+<!-- LET'S WORK TOGETHER STARTS
 <section id="contact" class="scrollspy">
     <div class="container" style="padding-bottom: 2em;">
         <div class="row section no-pad-bottom">
@@ -158,5 +158,5 @@
         </div>
     </div>
 </section>
-
+-->
 <?php get_footer(); ?>
